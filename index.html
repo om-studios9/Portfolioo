@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="OM PANDITT — Creative Strategist, Editor, Web Developer and AI Business Solutions Creator.">
+
+<meta name="keywords"
+      content="OM PANDITT, Creative Strategist, Editor, Web Developer, AI Business, Business Strategy">
+
+<title>OM PANDITT — Creative Strategist</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+    --bg: #070707;
+    --bg2: #0e0e0e;
+    --card: rgba(255,255,255,0.055);
+    --border: rgba(255,255,255,0.10);
+    --text: #ffffff;
+    --muted: #a7a7a7;
+    --accent: #ff6b35;
+    --accent2: #ff2e93;
+    --green: #25d366;
+    --shadow: 0 25px 80px rgba(0,0,0,0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at 15% 10%, rgba(255,107,53,0.12), transparent 30%),
+        radial-gradient(circle at 85% 30%, rgba(255,46,147,0.10), transparent 30%),
+        var(--bg);
+
+    color: var(--text);
+
+    font-family: "DM Sans", sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: auto;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 999;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    background: rgba(7,7,7,0.72);
+
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.nav-inner {
+    width: min(1180px, 90%);
+    margin: auto;
+
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+
+    font-size: 0.93rem;
+    color: #c8c8c8;
+}
+
+.nav-links a {
+    transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-cta {
+    padding: 11px 17px;
+
+    border-radius: 999px;
+
+    background: white;
+    color: black;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 100px;
+    position: relative;
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 8px 13px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    color: #dcdcdc;
+
+    font-size: 0.82rem;
+
+    margin-bottom: 22px;
+}
+
+.badge-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #38e87a;
+
+    box-shadow: 0 0 15px #38e87a;
+}
+
+.hero h1 {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(3.5rem, 8vw, 7rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -6px;
+
+    margin-bottom: 30px;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        90deg,
+        #ff6b35,
+        #ff2e93,
+        #a855f7
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    color: var(--muted);
+
+    max-width: 650px;
+
+    font-size: 1.12rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 13px;
+}
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 20px;
+
+    border-radius: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+.btn-primary {
+    background: white;
+    color: black;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255,255,255,0.13);
+}
+
+.btn-secondary {
+    border: 1px solid var(--border);
+
+    background: rgba(255,255,255,0.04);
+
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.09);
+
+    transform: translateY(-3px);
+}
+
+/* =========================================================
+   HERO CARD
+========================================================= */
+
+.hero-card {
+    position: relative;
+
+    min-height: 470px;
+
+    border-radius: 35px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.10),
+            rgba(255,255,255,0.025)
+        );
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(25px);
+
+    box-shadow: var(--shadow);
+
+    overflow: hidden;
+
+    padding: 28px;
+}
+
+.hero-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    background: var(--accent);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: 0.2;
+
+    top: -80px;
+    right: -50px;
+}
+
+.profile-circle {
+    width: 145px;
+    height: 145px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px auto 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--accent),
+            var(--accent2)
+        );
+
+    border: 7px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 0 70px rgba(255,107,53,0.20);
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.profile-title {
+    text-align: center;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.profile-role {
+    text-align: center;
+
+    color: var(--muted);
+
+    margin-bottom: 25px;
+}
+
+.mini-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 10px;
+}
+
+.stat {
+    padding: 15px 10px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.045);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    text-align: center;
+}
+
+.stat strong {
+    display: block;
+
+    font-size: 1.35rem;
+
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.stat span {
+    color: #999;
+
+    font-size: 0.72rem;
+}
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+section {
+    padding: 120px 0;
+}
+
+.section-label {
+    color: var(--accent);
+
+    font-size: 0.78rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(2.2rem, 5vw, 4rem);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 22px;
+}
+
+.section-description {
+    color: var(--muted);
+
+    max-width: 700px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-text p {
+    color: #b6b6b6;
+
+    line-height: 1.9;
+
+    margin-top: 20px;
+}
+
+.about-highlight {
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 14px;
+
+    margin-top: 30px;
+}
+
+.about-box {
+    padding: 22px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(255,255,255,0.2);
+}
+
+.about-box strong {
+    display: block;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 6px;
+}
+
+.about-box span {
+    font-size: 0.87rem;
+
+    color: #929292;
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 18px;
+
+    margin-top: 45px;
+}
+
+.service-card {
+    padding: 30px;
+
+    min-height: 240px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.075),
+            rgba(255,255,255,0.025)
+        );
+
+    border: 1px solid var(--border);
+
+    transition: 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255,255,255,0.2);
+
+    box-shadow: var(--shadow);
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    margin-bottom: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,107,53,0.20),
+            rgba(255,46,147,0.15)
+        );
+
+    font-size: 1.35rem;
+}
+
+.service-card h3 {
+    font-family: "Space Grotesk", sans-serif;
+
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #999;
+
+    line-height: 1.7;
+
+    font-size: 0.92rem;
+}
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.timeline {
+    margin-top: 50px;
+
+    border-left: 1px solid rgba(255,255,255,0.13);
+
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 42px;
+}
+
+.timeline-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: -36px;
+
+    top: 6px;
+
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+
+    box-shadow:
+        0 0 0 5px rgba(255,107,53,0.11);
+}
+
+.timeline-date {
+    color: var(--accent);
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    margin-bottom: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.timeline-item h3 {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 5px;
+}
+
+.timeline-item h4 {
+    color: #cbcbcb;
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
+
+    margin-bottom: 12px;
+}
+
+.timeline-item p {
+    max-width: 760px;
+
+    color: #929292;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   WORK / CAPABILITIES
+========================================================= */
+
+.work-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin-top: 50px;
+}
+
+.work-card {
+    min-height: 270px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    border: 1px solid var(--border);
+
+    background: var(--card);
+
+    transition: 0.35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.work-card:hover {
+    transform: translateY(-6px);
+}
+
+.work-number {
+    font-family: "Space Grotesk", sans-serif;
+
+    color: rgba(255,255,255,0.16);
+
+    font-size: 4rem;
+
+    font-weight: 700;
+
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+}
+
+.work-card h3 {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 1.45rem;
+
+    margin-top: 55px;
+
+    margin-bottom: 14px;
+}
+
+.work-card p {
+    color: #929292;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   BUSINESS CTA
+========================================================= */
+
+.cta {
+    padding: 65px;
+
+    border-radius: 35px;
+
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255,107,53,0.2),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.08),
+            rgba(255,255,255,0.025)
+        );
+
+    border: 1px solid var(--border);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.cta h2 {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(2.4rem,5vw,4.5rem);
+
+    letter-spacing: -2px;
+
+    max-width: 800px;
+
+    margin-bottom: 18px;
+}
+
+.cta p {
+    color: #9c9c9c;
+
+    max-width: 650px;
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.contact-list {
+    margin-top: 35px;
+}
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.06);
+}
+
+.contact-text span {
+    color: #888;
+
+    display: block;
+
+    font-size: 0.78rem;
+
+    margin-bottom: 2px;
+}
+
+.contact-text strong {
+    font-size: 0.95rem;
+
+    word-break: break-word;
+}
+
+/* =========================================================
+   QR
+========================================================= */
+
+.qr-box {
+    text-align: center;
+
+    padding: 35px;
+
+    border-radius: 28px;
+
+    background: rgba(255,255,255,0.045);
+
+    border: 1px solid var(--border);
+}
+
+.qr-box h3 {
+    font-family: "Space Grotesk", sans-serif;
+
+    margin-bottom: 8px;
+}
+
+.qr-box p {
+    color: #8f8f8f;
+
+    font-size: 0.88rem;
+
+    margin-bottom: 22px;
+}
+
+.qr-box img {
+    width: 210px;
+    height: 210px;
+
+    background: white;
+
+    padding: 10px;
+
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+}
+
+.qr-box img:hover {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 35px 0;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    color: #777;
+}
+
+.footer-inner {
+    width: min(1180px,90%);
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.footer-name {
+    color: white;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-weight: 700;
+}
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =========================================================
+   FLOATING ORBS
+========================================================= */
+
+.orb {
+    position: fixed;
+
+    border-radius: 50%;
+
+    filter: blur(90px);
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    opacity: 0.18;
+}
+
+.orb1 {
+    width: 250px;
+    height: 250px;
+
+    background: #ff6b35;
+
+    top: 30%;
+    left: -100px;
+}
+
+.orb2 {
+    width: 260px;
+    height: 260px;
+
+    background: #ff2e93;
+
+    bottom: 10%;
+    right: -120px;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .cta {
+        padding: 35px 25px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+
+    section {
+        padding: 90px 0;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .mini-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .about-highlight {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING BACKGROUND -->
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<nav>
+
+<div class="nav-inner">
+
+<a href="#home" class="logo">
+    OM<span>.</span>PANDITT
+</a>
+
+<div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Capabilities</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<a
+href="https://wa.me/917990133529"
+target="_blank"
+class="nav-cta">
+Let's Talk
+</a>
+
+</div>
+
+</nav>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div class="reveal">
+
+<div class="badge">
+    <span class="badge-dot"></span>
+    Available for selected projects
+</div>
+
+<h1>
+    I turn
+    <span class="gradient-text">
+        ideas
+    </span>
+    into impact.
+</h1>
+
+<p class="hero-description">
+
+I'm <strong>OM PANDITT</strong> — a creative strategist,
+editor, web builder and AI-focused business problem solver.
+
+I help people and businesses improve their presence,
+build better strategies, create digital experiences and
+use AI to work smarter.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#work"
+class="btn btn-primary">
+Explore My Work →
+</a>
+
+<a
+href="https://wa.me/917990133529?text=Hello%20OM%20PANDITT%2C%20I%20would%20like%20to%20discuss%20a%20project."
+target="_blank"
+class="btn btn-secondary">
+Start a Project
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card reveal">
+
+<div class="profile-circle">
+    OP
+</div>
+
+<h3 class="profile-title">
+    OM PANDITT
+</h3>
+
+<p class="profile-role">
+    Strategist • Creator • Builder
+</p>
+
+<div class="mini-stats">
+
+<div class="stat">
+    <strong>AI</strong>
+    <span>Solutions</span>
+</div>
+
+<div class="stat">
+    <strong>WEB</strong>
+    <span>Development</span>
+</div>
+
+<div class="stat">
+    <strong>GROW</strong>
+    <span>Strategy</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     ABOUT
+====================================================== -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="reveal">
+
+<div class="section-label">
+    About Me
+</div>
+
+<h2 class="section-title">
+    Creative thinking.
+    Strategic execution.
+</h2>
+
+<p class="section-description">
+
+I work at the intersection of creativity,
+technology and business.
+
+My focus is not simply creating something
+that looks good — it's creating something
+that has a purpose and helps move a business forward.
+
+</p>
+
+<div class="about-highlight">
+
+<div class="about-box">
+    <strong>Creative Strategy</strong>
+    <span>Ideas, positioning & growth thinking</span>
+</div>
+
+<div class="about-box">
+    <strong>Digital Creation</strong>
+    <span>Websites, content & digital presence</span>
+</div>
+
+<div class="about-box">
+    <strong>AI Workflows</strong>
+    <span>Smarter processes using AI</span>
+</div>
+
+<div class="about-box">
+    <strong>Business Growth</strong>
+    <span>Strategy focused on real results</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="reveal">
+
+<div class="section-label">
+    My Approach
+</div>
+
+<h2 class="section-title">
+    Think differently.
+</h2>
+
+<p class="section-description">
+
+Whether it's a website, content strategy,
+business management or an AI workflow,
+I first understand the problem.
+
+Then I build a practical solution around it.
+
+</p>
+
+<p style="
+margin-top:25px;
+color:#9b9b9b;
+line-height:1.9;
+">
+
+I believe the best digital work combines
+three things:
+
+<br><br>
+
+<strong style="color:white;">
+Creative ideas
+</strong>
++
+<strong style="color:white;">
+Clear strategy
+</strong>
++
+<strong style="color:white;">
+Smart technology
+</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SERVICES
+====================================================== -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="reveal">
+
+<div class="section-label">
+    What I Do
+</div>
+
+<h2 class="section-title">
+    More than just creating.
+</h2>
+
+<p class="section-description">
+
+I work with people, creators and businesses
+on projects where creativity and strategy
+need to work together.
+
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+<div class="service-card reveal">
+
+<div class="icon">✦</div>
+
+<h3>
+Business Strategy
+</h3>
+
+<p>
+I help businesses identify opportunities,
+improve positioning, develop ideas and
+create strategies designed for growth.
+</p>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="icon">◉</div>
+
+<h3>
+AI Business Solutions
+</h3>
+
+<p>
+I explore practical ways businesses can
+use AI to automate repetitive work,
+improve productivity and manage operations
+more efficiently.
+</p>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="icon">⌘</div>
+
+<h3>
+Web Development
+</h3>
+
+<p>
+I build responsive digital experiences
+using HTML, CSS and JavaScript with
+a focus on clean design and usability.
+</p>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="icon">✎</div>
+
+<h3>
+Editing & Content
+</h3>
+
+<p>
+Creative editing, visual storytelling,
+social content and digital presentation
+designed around the brand.
+</p>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="icon">↗</div>
+
+<h3>
+Growth Projects
+</h3>
+
+<p>
+From ideas to execution, I can work with
+business owners on projects focused on
+visibility, systems and growth.
+</p>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="icon">∞</div>
+
+<h3>
+Business Management
+</h3>
+
+<p>
+I also take selected projects where I
+help manage digital processes, strategy,
+content and AI-powered workflows.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     EXPERIENCE
+====================================================== -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="reveal">
+
+<div class="section-label">
+    Experience
+</div>
+
+<h2 class="section-title">
+    Building through experience.
+</h2>
+
+<p class="section-description">
+
+Every project has taught me something different:
+strategy, creativity, technology and business.
+
+</p>
+
+</div>
+
+
+<div class="timeline">
+
+<div class="timeline-item reveal">
+
+<div class="timeline-date">
+    Experience
+</div>
+
+<h3>
+Editor & Strategist
+</h3>
+
+<h4>
+InStyle Furniture World
+</h4>
+
+<p>
+
+Worked part-time as an editor and strategist,
+contributing to content, digital presentation,
+creative direction and ideas aimed at improving
+the business's digital presence.
+
+</p>
+
+<p style="margin-top:12px;">
+
+Instagram:
+<a
+href="https://www.instagram.com/instyle_furniture_world/"
+target="_blank"
+style="color:#ff6b35;">
+@instyle_furniture_world ↗
+</a>
+
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-date">
+    Founder
+</div>
+
+<h3>
+Founder & Owner
+</h3>
+
+<h4>
+Aumen Archives
+</h4>
+
+<p>
+
+Founder and sole owner of Aumen Archives,
+working independently on creative direction,
+brand building, digital ideas and execution.
+
+</p>
+
+<p style="margin-top:12px;">
+
+Instagram:
+<a
+href="https://www.instagram.com/aumen.archeives/"
+target="_blank"
+style="color:#ff6b35;">
+@aumen.archeives ↗
+</a>
+
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-date">
+    Internship
+</div>
+
+<h3>
+Intern
+</h3>
+
+<h4>
+VADIFY.IN
+</h4>
+
+<p>
+
+Gained practical exposure to a professional
+work environment and learned through real-world
+projects, digital work and business processes.
+
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-date">
+    Current Focus
+</div>
+
+<h3>
+Web + AI + Strategy
+</h3>
+
+<h4>
+Independent Projects
+</h4>
+
+<p>
+
+Currently focusing on building websites,
+exploring AI-powered business solutions,
+developing strategies and taking selected
+client projects.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     CAPABILITIES
+====================================================== -->
+
+<section id="work">
+
+<div class="container">
+
+<div class="reveal">
+
+<div class="section-label">
+    Capabilities
+</div>
+
+<h2 class="section-title">
+    Ideas I can help execute.
+</h2>
+
+<p class="section-description">
+
+I like projects where I can combine
+creative thinking with technology and
+business strategy.
+
+</p>
+
+</div>
+
+
+<div class="work-grid">
+
+<div class="work-card reveal">
+
+<div class="work-number">
+    01
+</div>
+
+<h3>
+Digital Presence
+</h3>
+
+<p>
+
+Build a strong online identity with
+websites, social media structure,
+visual direction and content planning.
+
+</p>
+
+</div>
+
+
+<div class="work-card reveal">
+
+<div class="work-number">
+    02
+</div>
+
+<h3>
+Business Growth
+</h3>
+
+<p>
+
+Find opportunities, improve positioning,
+develop practical strategies and create
+plans that can move a business forward.
+
+</p>
+
+</div>
+
+
+<div class="work-card reveal">
+
+<div class="work-number">
+    03
+</div>
+
+<h3>
+AI Integration
+</h3>
+
+<p>
+
+Discover where AI can reduce manual work,
+organize business processes and help teams
+operate more efficiently.
+
+</p>
+
+</div>
+
+
+<div class="work-card reveal">
+
+<div class="work-number">
+    04
+</div>
+
+<h3>
+Website Development
+</h3>
+
+<p>
+
+Responsive websites using HTML, CSS and
+JavaScript — focused on clean design,
+performance and usability.
+
+</p>
+
+</div>
+
+
+<div class="work-card reveal">
+
+<div class="work-number">
+    05
+</div>
+
+<h3>
+Creative Projects
+</h3>
+
+<p>
+
+Editing, storytelling, brand concepts,
+social media ideas and creative execution
+for individuals and businesses.
+
+</p>
+
+</div>
+
+
+<div class="work-card reveal">
+
+<div class="work-number">
+    06
+</div>
+
+<h3>
+Project Management
+</h3>
+
+<p>
+
+For selected projects, I can help coordinate
+strategy, content, digital presence and
+AI-powered workflows from idea to execution.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     BIG CTA
+====================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="cta reveal">
+
+<div class="section-label">
+    Have an idea?
+</div>
+
+<h2>
+    Let's turn your idea
+    into something real.
+</h2>
+
+<p>
+
+Whether you're building a brand,
+growing a business, launching a website
+or looking for smarter ways to use AI,
+let's build something useful.
+
+</p>
+
+<a
+href="https://wa.me/917990133529?text=Hello%20OM%20PANDITT%2C%20I%20have%20a%20project%20idea."
+target="_blank"
+class="btn btn-primary">
+
+Discuss a Project →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div class="reveal">
+
+<div class="section-label">
+    Contact
+</div>
+
+<h2 class="section-title">
+    Let's build something.
+</h2>
+
+<p class="section-description">
+
+Have a project, business idea or strategy
+you want to discuss?
+
+Reach out directly.
+
+</p>
+
+
+<div class="contact-list">
+
+<div class="contact-item">
+
+<div class="contact-icon">
+    ☎
+</div>
+
+<div class="contact-text">
+
+<span>
+Phone
+</span>
+
+<strong>
+<a href="tel:+917990133529">
++91 79901 33529
+</a>
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+    ◉
+</div>
+
+<div class="contact-text">
+
+<span>
+Instagram
+</span>
+
+<strong>
+
+<a
+href="https://www.instagram.com/om.panditt/"
+target="_blank">
+
+@om.panditt
+
+</a>
+
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+    💬
+</div>
+
+<div class="contact-text">
+
+<span>
+WhatsApp
+</span>
+
+<strong>
+
+<a
+href="https://wa.me/917990133529"
+target="_blank">
+
+Chat with me
+
+</a>
+
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+    ✉
+</div>
+
+<div class="contact-text">
+
+<span>
+Project Enquiries
+</span>
+
+<strong>
+
+<a
+href="mailto:7990133529@?subject=Project%20Enquiry">
+
+Contact via WhatsApp
+
+</a>
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- QR CODE -->
+
+<div class="qr-box reveal">
+
+<h3>
+Scan to Connect
+</h3>
+
+<p>
+Scan the QR code to visit my Instagram profile.
+</p>
+
+<a
+href="https://www.instagram.com/om.panditt/"
+target="_blank">
+
+<img
+
+src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=15&data=https%3A%2F%2Fwww.instagram.com%2Fom.panditt%2F"
+
+alt="OM PANDITT Instagram QR Code">
+
+</a>
+
+<p style="margin-top:20px;margin-bottom:0;">
+<strong style="color:white;">
+@om.panditt
+</strong>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+<div class="footer-inner">
+
+<div>
+
+© <span id="year"></span>
+
+<span class="footer-name">
+OM PANDITT
+</span>
+
+</div>
+
+<div>
+Creative Strategist • Builder • Creator
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+/* ========================================================
+   CURRENT YEAR
+======================================================== */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* ========================================================
+   SCROLL REVEAL
+======================================================== */
+
+const revealElements =
+document.querySelectorAll(".reveal");
+
+const revealObserver =
+new IntersectionObserver(
+
+(entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("active");
+
+}
+
+});
+
+},
+
+{
+threshold: 0.12
+}
+
+);
+
+
+revealElements.forEach(
+element =>
+revealObserver.observe(element)
+);
+
+
+/* ========================================================
+   NAVBAR ACTIVE FEEL
+======================================================== */
+
+window.addEventListener("scroll", () => {
+
+const nav =
+document.querySelector("nav");
+
+if(window.scrollY > 40){
+
+nav.style.background =
+"rgba(7,7,7,0.88)";
+
+}else{
+
+nav.style.background =
+"rgba(7,7,7,0.72)";
+
+}
+
+});
+
+
+/* ========================================================
+   BUTTON CLICK EFFECT
+======================================================== */
+
+document.querySelectorAll(".btn").forEach(button => {
+
+button.addEventListener("click", () => {
+
+button.style.transform = "scale(0.97)";
+
+setTimeout(() => {
+
+button.style.transform = "";
+
+},120);
+
+});
+
+});
+
+
+/* ========================================================
+   OPTIONAL DYNAMIC HERO TEXT
+======================================================== */
+
+const phrases = [
+    "ideas",
+    "brands",
+    "businesses",
+    "websites",
+    "AI systems"
+];
+
+let phraseIndex = 0;
+
+const gradientText =
+document.querySelector(".gradient-text");
+
+setInterval(() => {
+
+phraseIndex =
+(phraseIndex + 1) % phrases.length;
+
+gradientText.textContent =
+phrases[phraseIndex];
+
+}, 2400);
+
+</script>
+
+</body>
+</html>
